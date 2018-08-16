@@ -1,0 +1,10 @@
+<%- include('header')%>
+  <!-- html 模板 模板语法 需要编译 node模板之一 <%%> -->
+  <h1><%= name.toUpperCase() %></h1>
+  <p> Hello , <%= name %></p>
+  <ul>
+    <% for (var i=0; i < supplies.length; i++ ) {%>
+      <li><%= supplies[i]%></li>
+    <% } %>
+  </ul>
+<%- include('footer')%>
